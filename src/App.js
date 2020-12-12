@@ -4,7 +4,8 @@ import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Home from './Components/Home';
 import Contact from './Components/contact';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Post from './Components/Post';
 
 
 
@@ -14,9 +15,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/:post_id' component={Post} />
+          </Switch>
         </div>
       </BrowserRouter>
     )

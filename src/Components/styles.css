@@ -1,0 +1,27 @@
+.home .poke {
+    position: absolute;
+    top: 60px;
+    left: -70px;
+    opacity: 0.6;
+}
+.home {
+    overflow: hidden;
+    padding-left: 100px;
+}
+.postt {
+    margin: 0;
+    padding-left: 0px;
+}
+.home .pica {
+    position: absolute;
+    width: 217px;
+    opacity: 0.3;
+    top: 30px;
+    right: 10px;
+}
+.card .card-title{
+    font-weight: 500;
+}
+.card .card-content{
+    font-weight: 400;
+}
